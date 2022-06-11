@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<script src="https://cdn.tailwindcss.com"></script>
+
+<body>
+  <div class="max-w-4xl mx-auto px-5">
+    <div class="flex justify-end">
+      <button id="button" class="md:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="currentColor" class="bi bi-justify"
+          viewBox="0 0 24 24">
+          <path fill-rule="evenodd"
+            d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
+        </svg>
+      </button>
+    </div>
+    <div>
+
+      <ul id="menu" class="md:flex md:space-x-4 font-bold text-[20px] flex justify-end hidden ">
+        <li><a href="work.html" class="hover:text-red-600">Works</a></li>
+        <li><a href="blog.html" class="hover:text-red-600">Blog</a></li>
+        <li><a href="contrac.html" class="hover:text-red-600">Contact</a></li>
+      </ul>
+    </div>
+    <script>
+      const menu = document.getElementById("menu");
+      const button = document.getElementById("button");
+
+      button.addEventListener("click", function () {
+        menu.classList.toggle("hidden");
+      });
+    </script>
+    <div id="user" class=" grid md:grid-cols-2 md:gap-8 justify-between mt-8">
+      <!-- <div class=" space-y-4 order-2 md:order-1">
+                <h2 class="font-bold text-3xl">
+                    Hi, I am Luong,<br>Creative Technologist
+                </h2>
+                <p>
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                    duis enim velit
+                    mollit. Exercitation veniam consequat sunt nostrud amet.
+                </p>
+
+                <span class="bg-[#FF6464] p-4 rounded-full  inline-block"><a href="">Download Resume</a></span>
+            </div>
+            <div class="justify-end order-1 md:order-2  ">
+                <img src="https://res.cloudinary.com/dndyxqosg/image/upload/v1654235294/280506188_1138943049998807_5392473630503021645_n_rtgk2f.jpg"
+                    alt="" class="rounded-full w-[243px] h-[243px] md:ml-auto mx-auto md:mr-0">
+            </div> -->
+    </div>
+  </div>
+  <div class="w-full bg-[#EDF7FA] mt-8">
+    <div class=" max-w-4xl  mx-auto md:flex justify-center md:justify-between py-5 px-5">
+      <h2 class="text-[22px] text-center md:text-left">
+        Recent post
+      </h2>
+      <a href="" class="hidden md:inline-block text-[#00A8CC] ">View all</a>
+    </div>
+    <div id="productPosts" class="grid md:grid-cols-2 md:gap-8 justify-between mx-auto max-w-4xl px-5">
+      <!-- <div class=" bg-[#FFFFFF] space-x-2 mt-2 mb-8 p-3">
+                <h2 class="font-bold text-[26px] px-4">Making a design system from scratch</h2>
+                <div class="mt-4 px-3 ">
+                    <span class="text[18px]">12 Feb 2020</span>
+                    <span class="px-2">|</span>
+                    <span class="text-[18px]">Figma, Icon Design</span>
+                </div>
+                <p class="text-[16px] pt-4 px-3">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                    sint. Velit
+                    officia consequat
+                    duis enim velit
+                    mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            </div>
+            <div class="bg-[#FFFFFF] space-x-2 mt-2 mb-8 p-3 ">
+                <h2 class="font-bold text-[26px] px-4">Making a design system from scratch</h2>
+                <div class="mt-4 px-3 ">
+                    <span class="text[18px]">12 Feb 2020</span>
+                    <span class="px-2">|</span>
+                    <span class="text-[18px]">Design, Pattern</span>
+                </div>
+                <p class="text-[16px] pt-4 px-3">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                    sint.
+                    Velit
+                    officia consequat
+                    duis enim velit
+                    mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            </div> -->
+    </div>
+  </div>
+  <div class="md:max-w-4xl mx-auto mb-8 px-5">
+    <div class="my-6">
+      <h2 class="md:text-left text-center text-xl">Featured works</h2>
+
+    </div>
+
+    <div id="productWorks">
+      <!-- <div class="md:flex mb-2">
+                <div class="mt-2">
+                    <img src="https://res.cloudinary.com/dndyxqosg/image/upload/v1654352556/Rectangle_30_z5qfxs.jpg"
+                        width="480px" height="480px" alt="">
+                </div>
+                <div class="mx-4">
+                    <h3 class="font-bold text-[30px] ">Designing Dashboards</h3>
+                    <div class="my-3">
+                        <span class=" bg-[#142850] text-[#FFFFFF] rounded-xl px-2 w-[62px] text-[18px] ">2020</span>
+                        <span class="text-[#8695A4] pl-2">Dashboard</span>
+                    </div>
+                    <p class="text-[16px] pb-2">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                        sint.
+                        Velit
+                        officia consequat
+                        duis enim velit
+                        mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
+            </div>
+            <hr class="text-[#E0E0E0] my-8">
+            <div class="md:flex mb-2 mt-2">
+                <div class="mt-2">
+                    <img src="https://res.cloudinary.com/dndyxqosg/image/upload/v1654354318/Rectangle_32_igrsqc.jpg"
+                        alt="" width="480px" height="480px">
+                </div>
+                <div class="mx-4">
+                    <h3 class="font-bold text-[30px] ">Designing Dashboards</h3>
+                    <div class="my-3">
+                        <span class=" bg-[#142850] text-[#FFFFFF] rounded-xl px-2 w-[62px] text-[18px] ">2020</span>
+                        <span class="text-[#8695A4] pl-2">Dashboard</span>
+                    </div>
+                    <p class="text-[16px] pb-2">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                        sint.
+                        Velit
+                        officia consequat
+                        duis enim velit
+                        mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
+            </div>
+            <hr class="text-[#E0E0E0] my-8">
+            <div class="md:flex ">
+                <div class="mt-2">
+                    <img src="https://res.cloudinary.com/dndyxqosg/image/upload/v1654355822/Rectangle_34_hdbx2p.jpg"
+                        alt="" width="480px" height="480px">
+                </div>
+                <div class="mx-4">
+                    <h3 class="font-bold text-[30px] ">Designing Dashboards</h3>
+                    <div class="my-3">
+                        <span class=" bg-[#142850] text-[#FFFFFF] rounded-xl px-2 w-[62px] text-[18px] ">2020</span>
+                        <span class="text-[#8695A4] pl-2">Dashboard</span>
+                    </div>
+                    <p class="text-[16px] pb-2">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                        sint.
+                        Velit
+                        officia consequat
+                        duis enim velit
+                        mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
+            </div> -->
+    </div>
+
+  </div>
+  <div class=" mx-auto md:max-w-4xl text-center my-8 px-5">
+    <div class="flex justify-center space-x-4 mx-auto">
+      <img
+        src="https://res.cloudinary.com/dndyxqosg/image/upload/v1654405086/z3467811922052_c695fa08a2e8cc9f73a493dc18fbefc3_jkqycd.jpg"
+        alt="">
+      <img
+        src="https://res.cloudinary.com/dndyxqosg/image/upload/v1654405104/z3467811904282_1c5be99c6c5f54f72ca1dedf9683e31f_kolit8.jpg"
+        alt="">
+      <img src="https://res.cloudinary.com/dndyxqosg/image/upload/v1654405112/kk_x3sbs4.jpg" alt="">
+      <img
+        src="https://res.cloudinary.com/dndyxqosg/image/upload/v1654405097/z3467811887304_82e66009d06c03c016d8f74c2846ee79_xzkdf9.jpg"
+        alt="">
+    </div>
+    <div class="justify-center my-4">
+      <p class="text-[16px]">Copyright ©2020 All rights reserved</p>
+    </div>
+  </div>
+</body>
+
+</html>
+<script type="module" src="./javacript/home.js"></script>

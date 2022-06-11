@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https://cdn.tailwindcss.com"></script>
+
+<body>
+
+    <div class="max-w-4xl mx-auto px-5 justify-center py-5">
+        <div class="flex justify-end  ">
+            <button id="button" class="md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="currentColor" class="bi bi-justify"
+                    viewBox="0 0 24 24">
+                    <path fill-rule="evenodd"
+                        d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </button>
+        </div>
+        <div>
+            <ul id="menu" class="md:flex md:space-x-4 font-bold text-[20px] flex justify-end hidden ">
+                <li><a href="work.html" class="hover:text-red-600">Works</a></li>
+                <li><a href="blog.html" class="hover:text-red-600">Blog</a></li>
+                <li><a href="contrac.html" class="hover:text-red-600">Contact</a></li>
+            </ul>
+        </div>
+        <script>
+            const menu = document.getElementById("menu");
+            const button = document.getElementById("button");
+
+            button.addEventListener("click", function () {
+                menu.classList.toggle("hidden");
+            });
+        </script>
+        <div class="mx-auto space-y-6 mt-6">
+            <div class="md:w-[700px]">
+
+                <div class="my-4" id="detail">
+                    <!-- <h1 class="font-bold text-[34px]">Designing Dashboards with <br>
+                        usability in mind</h1>
+                    <div class="my-4">
+                        <span class="rounded-2xl px-2 bg-[#FF7C7C] text-[#FFFFFF]">2020</span> <span
+                            class="text[20px] pl-2">Dashboard,
+                            User Experience
+                            Design</span>
+                    </div>
+                    <p class="text-[16px]">
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia <br>
+                        consequat
+                        duis
+                        enim velit
+                        mollit. Exercitation veniam consequat sunt nostrud amet.
+                    </p>
+                    <img src="https://res.cloudinary.com/dndyxqosg/image/upload/v1654682503/Rectangle_4_wyd0tl.png"
+                        alt=""> -->
+
+                </div>
+                <div class="my-4">
+                    <h1 class="font-bold text-[30px]">Heading 1</h1>
+                    <h1 class="font-bold text-[24px]">Heading 2</h2>
+                        <p class="text[16px]">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                            Velit
+                            officia <br> consequat
+                            duis enim velit
+                            mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
+                <img src="https://res.cloudinary.com/dndyxqosg/image/upload/v1654682801/Rectangle_5_lrgexl.png" alt="">
+                <img src="https://res.cloudinary.com/dndyxqosg/image/upload/v1654682869/Rectangle_6_vkwqh1.png" alt="">
+                <div class="my-4">
+                    <div class="flex justify-center space-x-8 my-8">
+                        <img src="https://res.cloudinary.com/dndyxqosg/image/upload/v1654405086/z3467811922052_c695fa08a2e8cc9f73a493dc18fbefc3_jkqycd.jpg"
+                            alt="">
+                        <img src="https://res.cloudinary.com/dndyxqosg/image/upload/v1654405104/z3467811904282_1c5be99c6c5f54f72ca1dedf9683e31f_kolit8.jpg"
+                            alt="">
+                        <img src="https://res.cloudinary.com/dndyxqosg/image/upload/v1654405112/kk_x3sbs4.jpg" alt="">
+                        <img src="https://res.cloudinary.com/dndyxqosg/image/upload/v1654405097/z3467811887304_82e66009d06c03c016d8f74c2846ee79_xzkdf9.jpg"
+                            alt="">
+                    </div>
+                    <div class="flex justify-center mb-8">
+                        <p class="text[14px]">Copyright ©2020 All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="./javacript/thongtin.js"></script>
+</body>
+
+</html>
